@@ -16,12 +16,12 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%;
+    padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
@@ -31,8 +31,8 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-weight: 600;
     font-size: 1.5rem;
+    font-weight: 600;
     color: var(--cor-secundaria);
     text-decoration: none;
 }
@@ -69,9 +69,9 @@ body {
 .apresentacao__links {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 32px;
-    justify-content: space-between;
 }
 
 .apresentacao__links__subtitulo {
@@ -85,7 +85,7 @@ body {
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-secundaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -106,9 +106,9 @@ body {
 }
 
 .rodape {
-    padding: 24px;
     color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
+    padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
