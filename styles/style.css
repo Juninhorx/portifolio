@@ -96,7 +96,7 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: #272727;
     transform: scale(1.05);
 }
