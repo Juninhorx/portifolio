@@ -5,8 +5,9 @@
 }
 
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   font-family: 'magistral';
   font-style: normal;
   font-weight: 400;
+  /* background: linear-gradient(30deg, #ccc 10%, white 90%); */
 }

@@ -1,19 +1,21 @@
 import styled from 'styled-components'
+import Btn from '../Btn'
+import logo from '../../assets/logo-completa-black.png'
 
 const CustomHeader = styled.header`
   display: flex;
   text-align: center;
-  align-itens: center;
   justify-content: space-between;
   padding: 16px 64px;
-  `
-  const HeaderUl = styled.ul`
+`
+const HeaderUl = styled.ul`
   display: flex;
   list-style: none;
   gap: 10px;
-  `
+  margin: 0 10px;
+`
   
-  const HeaderLi = styled.li`
+const HeaderLi = styled.li`
   display: flex;
   align-itens: center;
   justify-content: center;
@@ -21,7 +23,7 @@ const CustomHeader = styled.header`
 `
 
 const LogoImg = styled.img`
-  width: 150px;
+  width: 180px;
   height: 30px;
 `
 
@@ -30,25 +32,32 @@ const CustomLink = styled.a`
   border-radius: 12px;
   text-decoration: none;
   color: ${props => props.background};
-  background: ${props => props.color};
+  background: transparent;
   font-size: 17px;
   &:hover{
     background: ${props => props.background};
     color: ${props => props.color};
-    box-shadow: ${props => props.boxshadow}
   }
+`
+const HeaderNav = styled.nav`
+  display: flex;
 `
 
 function Header() {
   return (
     <CustomHeader>
-      <LogoImg src='../public/assets/logo-completa-black.png'/>
-      <HeaderUl>
-        <HeaderLi><CustomLink color='white' background='black' href="">Menu</CustomLink></HeaderLi>
-        <HeaderLi><CustomLink color='white' background='black' href="">Sobre Mim</CustomLink></HeaderLi>
-        <HeaderLi><CustomLink color='white' background='black' href="">Projetos</CustomLink></HeaderLi>
-        <HeaderLi><CustomLink color='black' boxshadow='0px 0px 0px 2px black inset' background='white' href="">Contato {'\u2b67'}</CustomLink></HeaderLi>
-      </HeaderUl>
+      <LogoImg src={logo}/>
+      <HeaderNav>
+        <HeaderUl>
+          <HeaderLi>
+            <CustomLink color='white' background='black' href="">Menu</CustomLink></HeaderLi>
+          <HeaderLi>
+            <CustomLink color='white' background='black' href="">Sobre Mim</CustomLink></HeaderLi>
+          <HeaderLi>
+            <CustomLink color='white' background='black' href="">Projetos</CustomLink></HeaderLi>
+        </HeaderUl>
+        <Btn color='black' background='white' change="#ccc" content={`Contato ${'\u2b67'}`}/>
+      </HeaderNav>
     </CustomHeader>
   )
 }
