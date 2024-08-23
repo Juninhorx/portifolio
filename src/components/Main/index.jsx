@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Btn from '../Btn'
 import Subtitle from '../Subtitle'
 import StacksHolder from '../StacksHolder'
+import ProjectsSection from '../ProjectsSection'
 
 const CustomSection = styled.section`
   // background: red;
@@ -50,11 +51,16 @@ const Main = () => {
       </CustomSection>
     <CustomSection>
         <Subtitle content="Sobre Mim"/>
-        <CustomP>Brasileiro, 20 anos, residente em Divinópolis – MG. <br/> <br/> 
-          Sou um Desenvolvedor WEB com experiência em HTML, CSS e Javascript, 
-          React.js,  Node.js e Express.js, APIs com rest, e teste das APIs, usando Postman. 
-          Iniciando o aprendizado de React e typescript. </CustomP>
+        <CustomP>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam doloribus recusandae neque cum provident dolorem dignissimos corrupti eum, voluptatem nulla officia commodi dolore repellat, error mollitia soluta quidem cupiditate ex?
+        </CustomP>
         <StacksHolder/>
+      </CustomSection>
+      <CustomSection>
+        <Subtitle content="Projetos"/>
+        <ProjectsSection/>
+      </CustomSection>
+      <CustomSection>
+        <Subtitle content="Contato"/>
       </CustomSection>
     </main>
   )

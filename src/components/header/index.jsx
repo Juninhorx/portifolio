@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Btn from '../Btn'
-import logo from '../../assets/logo-completa-black.png'
+import logo from '../../assets/logos/logo-completa-black.png'
 
 const CustomHeader = styled.header`
   display: flex;
@@ -14,19 +14,16 @@ const HeaderUl = styled.ul`
   gap: 10px;
   margin: 0 10px;
 `
-  
 const HeaderLi = styled.li`
   display: flex;
   align-itens: center;
   justify-content: center;
   text-align: center;
 `
-
 const LogoImg = styled.img`
   width: 180px;
   height: 30px;
 `
-
 const CustomLink = styled.a`
   padding: 8px 24px;
   border-radius: 12px;
@@ -42,7 +39,6 @@ const CustomLink = styled.a`
 const HeaderNav = styled.nav`
   display: flex;
 `
-
 function Header() {
   return (
     <CustomHeader>
