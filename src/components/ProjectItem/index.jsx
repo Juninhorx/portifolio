@@ -58,7 +58,7 @@ const Button = styled.a`
   margin: 10px;
 `
 
-const ProjectItem = ({image, title, description, stacks}) => {
+const ProjectItem = ({image, title, description, stacks, repo, deploy}) => {
   return (
     <Project>
       <Container>
@@ -72,8 +72,8 @@ const ProjectItem = ({image, title, description, stacks}) => {
           ))}
         </StacksHolder>
         <ButtonHolder>
-          <Button href={'#'}><FaGithub style={{fontSize: '30px'}}/></Button>
-          <Button href='#'><FaLink style={{fontSize: '30px'}}/></Button>
+          <Button target='blank' href={repo}><FaGithub style={{fontSize: '30px'}}/></Button>
+          <Button target='blank' href={deploy}><FaLink style={{fontSize: '30px'}}/></Button>
         </ButtonHolder>
       </Container>
     </Project>
