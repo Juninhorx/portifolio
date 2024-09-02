@@ -8,6 +8,7 @@ import Contact from "../Contact";
 
 const CustomSection = styled.section`
   padding: 72px 64px 0 64px;
+  margin: 32px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +50,7 @@ const BtnHolder = styled.div`
   display: flex;
   padding: 24px 0 0 0;
   gap: 32px;
+  justify-content: center;
   width: 100%;
   text-align: center;
   @media (max-width: 850px) {
@@ -70,9 +72,11 @@ const Main = () => {
         <Title>Ricardo Xavier</Title>
         <Dash />
         <CustomP>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi amet
-          laborum commodi provident animi, molestiae labore minus eos dolore aut
-          magnam molestias ea ratione quo recusandae ab quis similique id?
+          Desenvolvi este portifólio para mostrar alguns dos meus projetos mais
+          significativos, minhas principais habilidades e um pouco sobre minha
+          trajetória profissional. A intenção é dar uma visão clara do que eu
+          posso oferecer e como posso contribuir para novos desafios e
+          oportunidades.
         </CustomP>
         <BtnHolder>
           <Btn
@@ -92,10 +96,18 @@ const Main = () => {
       <CustomSection>
         <Subtitle content="Sobre Mim" />
         <CustomP>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-          doloribus recusandae neque cum provident dolorem dignissimos corrupti
-          eum, voluptatem nulla officia commodi dolore repellat, error mollitia
-          soluta quidem cupiditate ex?
+          Tenho 20 anos, sou um Desenvolvedor Web especializado em <strong>JavaScript</strong>. <br/>Estou cursando <strong>Ciências da Computação</strong> na Una Divinópolis.
+          Minha jornada no desenvolvimento web começou aos 17 anos, e desde
+          então, venho aprimorando minhas habilidades e adquirindo experiência
+          em diversas tecnologias. <br/> Possuo conhecimentos sólidos em HTML, CSS e
+          JavaScript, além de experiência prática com frameworks e bibliotecas
+          como React.js e Node.js. Também tenho trabalhado com APIs utilizando
+          Express.js e Fastify, e sou familiarizado com bancos de dados como
+          MySQL. Além disso, tenho experiência com autenticação JWT e
+          versionamento de código com Git e GitHub.<br/> Estou sempre em busca de
+          novos desafios e oportunidades para expandir meus conhecimentos e
+          contribuir para projetos inovadores. Sinta-se à vontade para explorar
+          meu portfólio e entrar em contato!
         </CustomP>
         <StacksHolder />
       </CustomSection>

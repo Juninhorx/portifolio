@@ -6,16 +6,16 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const CustomHeader = styled.header`
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  padding: 16px 64px;
-  transition: all 1s ease-in;
-  @media (max-width: 850px) {
-    padding: 16px 32px;
+display: flex;
+text-align: center;
+justify-content: space-between;
+padding: 16px 64px;
+transition: all 1s ease-in;
+@media (max-width: 850px) {
+  padding: 16px 32px;
   }
-`;
-const HeaderUl = styled.ul`
+  `;
+  const HeaderUl = styled.ul`
   display: flex;
   list-style: none;
   gap: 10px;
@@ -23,30 +23,30 @@ const HeaderUl = styled.ul`
   @media (max-width: 850px) {
     flex-direction: column;
     gap: 100px;
-  }
-`;
-const HeaderLi = styled.li`
-  display: flex;
-  align-itens: center;
-  justify-content: center;
-  text-align: center;
-`;
-const LogoImg = styled.img`
-  width: 180px;
-  height: 30px;
-  @media (max-width: 660px) {
-    width: 140px;
-    height: 25px;
-  }
-`;
-const CustomLink = styled.a`
-  padding: 8px 24px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: ${(props) => props.background};
-  background: transparent;
-  font-size: 17px;
-  &:hover {
+    }
+    `;
+    const HeaderLi = styled.li`
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    text-align: center;
+    `;
+    const LogoImg = styled.img`
+    width: 180px;
+    height: 30px;
+    @media (max-width: 660px) {
+      width: 140px;
+      height: 25px;
+      }
+      `;
+      const CustomLink = styled.a`
+      padding: 8px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: ${(props) => props.background};
+      background: transparent;
+      font-size: 18px;
+      &:hover {
     background: ${(props) => props.background};
     color: ${(props) => props.color};
   }

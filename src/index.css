@@ -122,5 +122,11 @@ body {
   font-family: "Magistral";
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
   /* background: linear-gradient(45deg, #ccc 10%, white 90%); */
+}
+
+
+br {
+  margin: 0 0 10px 0;
 }

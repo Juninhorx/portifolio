@@ -30,15 +30,6 @@ const dataProjects = [
     repo: "https://github.com/Juninhorx/busca-cep",
     deploy: "https://busca-cep-seven-orcin.vercel.app/",
   },
-  {
-    image: imagemPortifolio,
-    title: "Este Portifólio",
-    description:
-      "Este projeto foi desenvolvido com o intuito de mostrar o meu trabalho, as tecnologias que uso no dia a dia e algun projetos pessoais. Com este projeto desenvolvi habilidades de front-end, design, responsividade e também consumi uma api para o envio dos e-mails de contato.",
-    stacks: [react, js, css, html],
-    repo: "https://github.com/Juninhorx/portifolio",
-    deploy: "https://portifolio-liard-three.vercel.app/",
-  },
 ];
 
 export default dataProjects;

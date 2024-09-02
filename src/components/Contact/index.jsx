@@ -39,21 +39,24 @@ const CustomInput = styled.input`
   border-radius: 10px;
   border: 1px solid grey;
   margin: 8px;
+  height: 50px;
   padding: 10px;
   font-weight: 600;
   font-family: "Magistral";
   @media (max-width: 850px) {
-    width: 100%;
     height: 60px;
+    width: 100%;
     font-size: 18px;
   }
 `;
 
 const CustomBtn = styled.button`
   padding: 8px;
+  // margin-left: 5px;
   cursor: pointer;
   border-radius: 12px;
   color: white;
+  height: 60px;
   background: black;
   box-shadow: 0 0 0 1px black inset;
   font-size: 17px;
@@ -65,8 +68,10 @@ const CustomBtn = styled.button`
   }
   @media (max-width: 850px) {
     width: 80%;
-    padding: 16px;
     font-size: 24px;
+  }
+  @media (max-width: 660px){
+    width: 100%;
   }
 `;
 
