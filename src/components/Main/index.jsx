@@ -82,14 +82,14 @@ const Main = () => {
           <Btn
             color="white"
             background="Black"
-            change="#ccc"
+            change="black"
             content="Projetos"
             href="#projetos"
           />
           <Btn
             color="black"
             background="white"
-            change="#ccc"
+            change="white"
             content={`Contato ${"\u2709"}`}
             href="#contato"
           />

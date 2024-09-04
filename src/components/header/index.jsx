@@ -71,31 +71,28 @@ const BtnMenu = styled.button`
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => setIsOpen(!isOpen);
+
   return (
     <CustomHeader className={isOpen ? "menuMobile" : ""}>
       <LogoImg src={logo} />
       <nav className={isOpen ? "menuMobile" : "hide"}>
         <HeaderUl>
           <HeaderLi>
-            <CustomLink color="white" background="black" href="#menu">
-              Menu
-            </CustomLink>
-          </HeaderLi>
-          <HeaderLi>
-            <CustomLink color="white" background="black" href="#sobre">
+            <CustomLink color="white" background="black" href="#sobre" onClick={closeMenu}>
               Sobre Mim
             </CustomLink>
           </HeaderLi>
           <HeaderLi>
-            <CustomLink color="white" background="black" href="#projetos">
+            <CustomLink color="white" background="black" href="#projetos" onClick={closeMenu}>
               Projetos
             </CustomLink>
           </HeaderLi>
           <HeaderLi>
             <CustomLink
-              color="black"
-              background="grey"
-              href="#contato"
+              color="white"
+              background="black"
+              href="#contato" 
             >{`Contato ${"\u2709"}`}</CustomLink>
           </HeaderLi>
         </HeaderUl>
