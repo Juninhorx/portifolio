@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const CustomSubtitle = styled.h2`
   font-weight: 400;
-  // margin-top: 18px;
 `;
 const Dash = styled.hr`
   margin: 32px 0;
@@ -13,12 +12,17 @@ const Dash = styled.hr`
   width: 160px;
 `;
 
+const divStyle = {
+  marginTop: "18px",
+  textAlign: "center"
+};
+
 const Subtitle = ({ content }) => {
   return (
-    <>
+    <div style={divStyle}>
       <CustomSubtitle>{content}</CustomSubtitle>
       <Dash />
-    </>
+    </div>
   );
 };
 

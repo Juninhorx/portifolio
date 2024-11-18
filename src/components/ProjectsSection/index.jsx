@@ -6,9 +6,11 @@ import dataProjects from "../dataProjects";
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8%;
+  gap: 6%;
+  margin-bottom: 10%;
   padding: 0 10%;
   @media (max-width: 850px) {
+    margin-bottom: 50%;
     gap: 4%;
     padding: 0 0;
   }

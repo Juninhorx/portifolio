@@ -9,6 +9,9 @@ import fastify from "../../assets/logos/Fastify.png";
 import html from "../../assets/logos/html.png";
 import css from "../../assets/logos/css.png";
 import git from "../../assets/logos/git.png";
+import java from "../../assets/logos/java.png";
+import postgres from "../../assets/logos/postgre.png";
+import springboot from "../../assets/logos/springboot.svg";
 
 import styled from "styled-components";
 
@@ -22,7 +25,6 @@ const Stack = styled.img`
 `;
 
 const StacksContainer = styled.div`
-  // padding: 18px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,8 +34,11 @@ const StacksContainer = styled.div`
 const StacksHolder = () => {
   return (
     <StacksContainer>
-      <Stack src={github} />
+      <Stack src={java} />
+      <Stack src={springboot} />
+      <Stack src={postgres} />
       <Stack src={git} />
+      <Stack src={github} />
       <Stack src={node} />
       <Stack src={express} />
       <Stack src={mysql} />
